@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html{
+    background-color: #e9ebee;
+}
+
+.pay_container{
+    width: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 30px 15px;
+    box-shadow: 1px 1px 1px 1px #61616144;
+    border-radius: 8px;
+}
+
+.pay_title,.pay_montant{
+    width: 50vh;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.pay_title span{
+    margin-bottom: 10px;
+}
+
+.pay_title #user_name{
+    text-transform: uppercase;
+}
+
+.description{
+    width: 53vh;
+    text-align: center;
+    margin-top: 10px;
+    color: #7f8c8d;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    word-break:keep-all;
+    line-height: 23px;
+}
+
+.pay_montant span{
+    margin-bottom: 5px;
+}
+
+.pay_montant{
+    margin-top: 15px;
+}
+
+.pay_montant #tit, .pay_montant #mont{
+    font-size: 18px;
+}
+
+.vide{
+    border: 1px solid red;
+    width: 55vh;
+    margin-top: 25px;
+}
+
+

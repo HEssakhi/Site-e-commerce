@@ -1,0 +1,926 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url("../assets/jquery-file-upload/css/jquery.fileupload.css");
+
+
+*{
+    max-height: 170vh;
+}
+body {
+    background-color: #fff !important;
+    margin: 0;
+}
+
+/*form styles*/
+#msform {
+    max-width: 1000px;
+    max-height: 170vh;
+    margin: 50px auto;
+	text-align: center;
+    position: relative;
+    top: -1rem;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #dadce0, inset 0 -1px 0 0 #dadce0, inset 0 1px 0 0 rgba(60, 64, 67, .3),
+    0 1px 3px 1px rgba(60, 64, 67, .15);
+    z-index: 1;
+	padding: 20px 30px;
+	box-sizing: border-box;
+    width: 95%;
+    height: 150vh;
+	margin: 0  2.5%;
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+
+#msform .details{
+    height: 75vh;
+}
+
+#msform #field1{
+    height: 100vh;
+}
+
+#msform #field2{
+    height: 80vh;
+}
+
+#msform #last{
+    height: 75vh;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/**end form styles**********/
+
+/*inputs*/
+#msform fieldset input , #msform fieldset textarea {
+	padding: 11px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+    margin-bottom: 25px;
+	width: 90%;
+	box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+	color: #2C3E50;
+    font-size: 15px;
+    position: relative;
+    left: -1.9rem;
+    cursor: text;
+}
+
+/** select box**/
+.container{
+    max-width: 400px;
+    position: relative;
+    top: -25rem;
+    left: -24rem;
+    padding-bottom: 15px;
+}
+
+#appartements{
+    display: none;
+}
+
+#appartements.shown1{
+    display: block;
+}
+
+#bureau-plateaux{
+    display: none;
+}
+
+#bureau-plateaux.shown2{
+    display: block;
+}
+
+#villa-maison{
+    display: none;
+}
+
+#villa-maison.shown3{
+    display: block;
+}
+
+#magasin{
+    display: none;
+}
+
+#magasin.shown4{
+    display: block;
+}
+
+/** fieldset1**/
+.select-box{
+    width: 300px;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.select-box select{
+    height: 45px;
+    padding: 10px 10px;
+    line-height:18px;
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+    width: 120%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-left: -15.8px;
+}
+
+.select-box:after{
+    content: "";
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    left: 32rem;
+    top: 70%;
+    margin-top: -4px;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    transform: rotate(226deg);
+    pointer-events: none;
+}
+
+.ville:after{
+    content: normal;
+}
+
+.select-box select:focus{
+    border: 2px solid #ede734;
+}
+
+/** the input box**/
+.input-box {
+    width: 400px;
+    position: relative;
+    left: -1.65rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.input-box #adresse{
+    width: 90%;
+    margin-left: -1px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: rgb(45, 45, 45);
+    outline: non;
+}
+
+.input-box #adresse::placeholder{
+    color: rgb(102, 102, 102);
+}
+
+.input-box #adresse:focus{
+    border: 2px solid #ede734;
+}
+
+/** the end of the input box*/
+/**end fieldset1**/
+
+/**fieldset2**/
+.part2{
+    max-width: 1020px;
+    max-height: 33vh;
+    position: relative;
+    top: -0.8rem;
+    padding: 15px 0px 5px 8px;
+    padding-top: 8px;
+    box-shadow: inset 0 1px 0 0 #dadce0, inset 0 -1px 0 0 #dadce0, inset 0 1px 0 0 rgba(60, 64, 67, .3),
+    0 1px 3px 1px rgba(60, 64, 67, .15);
+    z-index: 1;
+}
+
+#part2{
+    position: relative;
+    top: 4rem;
+    height: 65vh;
+}
+
+.border{
+    margin: auto;
+    height: 0.6px;
+    background: rgba(0,0,0,.1);
+    position: relative;
+    top: 2.7rem;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+}
+
+.container2, .container3, .container4{
+    max-width: 1000px;
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container4{
+    min-height: 35vh;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    box-shadow: inset 0 1px 0 0 #dadce0, inset 0 -1px 0 0 #dadce0, inset 0 1px 0 0 rgba(60, 64, 67, .3),
+    0 1px 3px 1px rgba(60, 64, 67, .15);
+    z-index: 1;
+    margin-top: 2rem;
+}
+
+#container3{
+    padding-left: 5px;
+}
+
+.container2 >.select-box2{
+    width: 200px;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    line-height: 20px;
+    margin: 10px 10px;
+}
+
+.container2 >.select-box2 select{
+    height: 45px;
+    padding: 10px 10px;
+    line-height:18px;
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+    width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-left: -10px;
+}
+
+.container2 >.select-box2:after{
+    content: "";
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    left: 17rem;
+    top: 66%;
+    margin-top: -4px;
+    border-top: 2px solid #343a40;
+    border-left: 2px solid #343a40;
+    transform: rotate(226deg);
+    pointer-events: none;
+}
+
+.select-box2 select:focus{
+    border: 2px solid #007bff;
+    transition-delay: 0.1s;
+}
+
+/**the input box2**/
+.container2 >.input-box2, .container4 >.input-box1 {
+    width: 200px;
+    height: 8rem;
+    position: relative;
+    top: 0.72rem;
+    left: -0.9rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.container2 .input-box2 #surft{
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: rgb(45, 45, 45);
+    position: relative;
+    left: -11px;
+}
+
+.container2 .input-box2 #surft:focus{
+    border: 2px solid #007bff;
+    transition-delay: 0.1s;
+}
+
+.container3 >.input-box, .container4 >.input-box1 {
+    width: 400px;
+    height: 8rem;
+    position: relative;
+    top: 0.72rem;
+    left: -1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.container3 > #txt{
+    position: relative;
+    top: 3.5rem;
+}
+
+.container3 >.input-box #tit-annonce, .container4 >.input-box1 #nom, .input-box1 #email, .input-box1 #password{
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: rgb(45, 45, 45);
+    position: relative;
+    left: -11px;
+    padding-left: 12px;
+}
+
+.container4 >.input-box1 i {
+    position: absolute;
+    left: 35.5rem;
+    top:4.1rem;
+    color: #8a8a8a;
+    cursor: default;
+  }
+
+.container4 >.input-box1 .icon{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 51%;
+    left: 0.7rem;
+    cursor: text;
+}
+
+.container4 >.input-box1 #pass{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+}
+.container4 >.input-box1 #envelope{
+    position: absolute;
+    top: 52%;
+}
+
+.container4 >.input-box1 #nom , .input-box1 #email, .input-box1 #password{
+    padding-left: 40px;
+}
+
+
+
+.container4 >.input-box5{
+    width: 190px;
+    height: 8rem;
+    position: relative;
+    top: 0.72rem;
+    left: -1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.container4 >.input-box5 .icon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 23%;
+    left: 0.7rem;
+    cursor: text;
+}
+
+.container4 >.input-box5 #cell{
+    position: absolute;
+    left: 1.3rem;
+}
+
+.container4 >.input-box5 #cin, .input-box5 #tel{
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: rgb(45, 45, 45);
+    position: relative;
+    left: -11px;
+    padding-left: 12px;
+}
+
+.container4 >.input-box5 #cin{
+    width: 105%;
+    padding-left: 40px;
+}
+
+.container4 >.input-box5 #tel{
+    width: 115%;
+    padding-left: 40px;
+    margin-left: 05px;
+    color: rgb(45, 45, 45);
+}
+
+.container4 >.input-box5 #cin::placeholder{
+    color: rgb(167, 166, 166);
+}
+
+.container4 >.input-box5 #tel::placeholder{
+    color: rgb(167, 166, 166);
+}
+
+.container3 >.input-box #tit-annonce::placeholder{
+    color: rgb(167, 166, 166);
+}
+
+.container4 >.input-box1 #email::placeholder{
+    color: rgb(167, 166, 166);
+}
+
+.container4 >.input-box1 #nom::placeholder{
+    color: rgb(167, 166, 166);
+}
+
+.container3 >.input-box #tit-annonce:focus{
+    border: 2px solid #007bff;
+    transition-delay: 0.1s;
+}
+
+.container4 >.input-box1 #nom:focus{
+    border: 2px solid #007bff;
+    transition-delay: 0.1s;
+}
+
+.container4 >.input-box5 #cin:focus{
+    border: 2px solid #007bff;
+    transition-delay: 0.1s;
+}
+
+.container4 >.input-box5 #tel:focus{
+    border: 2px solid #007bff;
+    transition-delay: 0.1s;
+}
+
+.container3 >.input-box #txt-annonce{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: rgb(45, 45, 45);
+    position: relative;
+    left: -11px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    overflow: auto;
+    resize: none;
+    display: table;
+}
+
+.container3 >.input-box #txt-annonce::placeholder{
+    font-size: 16px;
+    color: rgb(167, 166, 166);
+}
+
+.container3 >.input-box >#txt-annonce:focus{
+    border: 2px solid #007bff;
+    transition-delay: 0.1s;
+}
+
+.container3 >.input-box > .word-counter {
+    position:absolute;
+    top: 23.3rem;
+    right:3.3rem;
+    font-size: 15px;
+}
+
+
+/**the end of the input box2**/
+
+/**end fieldset2**/
+
+/**end select box**/
+
+/** les titres de "select box"**/
+/**fieldset1**/
+.container .select-box label, .input-box label{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #4a4a4a;
+    font-weight: 400;
+    position: relative;
+    left: -12.5rem;
+}
+
+.container .select-box .Transact{
+    position: relative;
+    left: -14.2rem;
+}
+
+.container .select-box .ville{
+    position: relative;
+    left: -14rem;
+}
+
+.container .input-box .adresse{
+    position: relative;
+    left: -12.7rem;
+}
+.container .select-box label span, .input-box label span, .container4 >.input-box1 label span, .input-box5 label span{
+    color: #B32E3F;
+}
+/**end fieldset1**/
+
+/**fieldset2**/
+.container2 .select-box2 label{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #4a4a4a;
+    font-weight: 400;
+    position: relative;
+    left: -2.5rem;
+}
+
+.container2 .select-box2 .bain{
+    position: relative;
+    left: -4.5rem;
+}
+
+.container2 .select-box2 .salon{
+    position: relative;
+    left: -6.7rem;
+}
+
+.container2 .select-box2 .etage{
+    position: relative;
+    left: -7.1rem;
+}
+
+.container2 .select-box2 .age{
+    position: relative;
+    left: -4.7rem;
+}
+
+.container2 .input-box2 label, .container4 .input-box1 label, .input-box5 label{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #4a4a4a;
+    font-weight: 400;
+}
+
+.container2 .input-box2 .surft{
+    position: relative;
+    left: -5rem;
+}
+
+.container2 .input-box2 .surfh{
+    position: relative;
+    left: -3.55rem;
+}
+
+.container2 .input-box2 .frais{
+    position: relative;
+    left: -1.8rem;
+}
+
+.container3 >.input-box .tit-annonce{
+    position: relative;
+    left: -12.2rem;
+}
+
+.container3 >.input-box .prix{
+    position: relative;
+    left: -18.8rem;
+}
+
+.container3 >.input-box .nbr_pièce{
+    position: relative;
+    left: -14.3rem;
+}
+
+.container3 .price{
+    margin-top: 10px;
+}
+
+.container3 >.input-box .txt{
+    position: relative;
+    left: -13rem;
+}
+/**end fieldset2**/
+/**fieldset4**/
+.container4 >.input-box1 .nom{
+    position: relative;
+    left: -14rem;
+}
+
+.container4 >.input-box5 .cin{
+    position: relative;
+    left: -8rem;
+}
+
+.container4 >.input-box5 .tel{
+    position: relative;
+    left: -5.5rem;
+}
+
+.container4 >.input-box1 .email{
+    position: relative;
+    left: -17.5rem;
+}
+
+.container4 >.input-box1 .password{
+    position: relative;
+    left: -15.1rem;
+}
+/** end les titres de "select box"**/
+
+/*buttons*/
+#msform .action-button {
+    display: inline-flex;
+     -moz-box-align: center;
+     align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    line-height: 1.5rem;
+    max-width: 110px;
+    height: 48px;
+    background: #007bff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    letter-spacing: 0.05rem;
+	color: white;
+	border: 0 none;
+	border-radius: 4px;
+	cursor: pointer;
+    padding: 10px 7px;
+    position: relative;
+    top: -22rem;
+    margin-bottom: 10px;
+    margin-left: 75rem;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #007bff;
+}
+
+#msform #but1, #msform #but3, #msform #but5{
+    position: relative;
+    top: 9rem;
+    left: -75rem;
+    color: #4a4a4a;
+    background:rgb(223, 222, 222);
+}
+
+#msform #but5{
+    position: relative;
+    top: 7rem;
+    left: -69rem;
+}
+
+#msform #but1:hover{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(167, 166, 166);
+}
+
+#msform #but3:hover{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(167, 166, 166);
+}
+
+#msform #but5:hover{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(167, 166, 166);
+}
+
+#msform #but2{
+    position: relative;
+    top: 3.3rem;
+    left: 0.2rem;
+}
+
+#msform #but4{
+    position: relative;
+    top: 1.2rem;
+}
+
+#msform #but6{
+    position: relative;
+    top: 1.5rem;
+    margin-left:68rem ;
+}
+
+
+
+
+/** end buttons
+
+/*headings*/
+.title .fs-title {
+    font-size: 24px;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2d2d2d;
+    font-weight: 400;
+    position: relative;
+    top: -1rem;
+    left: -28rem;
+    letter-spacing: 0.11rem;
+    line-height: 3.5rem;
+}
+
+.title .minititle{
+    display: flex;
+    margin-top: -10px;
+    margin-left: 0.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.minititle .fs-subtitle {
+    font-size: 16px;
+    font-weight: 590;
+    color: #666;
+    letter-spacing: 0.06rem;
+    margin-left: 0.7rem;
+    position: relative;
+    top: -1.855rem;
+}
+
+.minititle img{
+    width: 20px;
+    height: 20px;
+}
+
+.minititle .principal{
+    width: 50%;
+    height: 60%;
+    position: relative;
+    left: 14rem;
+    top: 6rem;
+}
+
+.minititle .fs-subtitle span{
+    color: #B32E3F;
+    padding: 2px;
+}
+
+/**fieldset2**/
+#titlefield2{
+    position: relative;
+    left: -36rem;
+    top: -1.8rem;
+    color: #000;
+}
+
+#titlefield3{
+    position: relative;
+    left: -32rem;
+    top: 2rem;
+    color: #000;
+}
+/**end fieldset2**/
+
+/**fieldset4**/
+#titlefield4{
+    position: relative;
+    left: -34.7rem;
+    top: -1rem;
+}
+
+/*********last************/
+#titlelast{
+    position: relative;
+    left: -34rem;
+}
+
+.note{
+    position: relative;
+    top: -1rem;
+    left: -30rem;
+    color: #000;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+}
+/****end headings*************************/
+
+/*progressbar*/
+#progressbar {
+    display: flex;
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+
+#progressbar li.active{
+    color: #27AE60;
+}
+
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+    width: 30px;
+    height: 30px;
+	line-height: 20px;
+	display: block;
+	font-size: 15px;
+	color: #333;
+    background: white;
+    border: 2px solid #9B9B9B;
+	border-radius: 50%;
+    margin: 0 auto 5px auto;
+    padding-top: 4px;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #D0D0D0;
+	position: absolute;
+	left: -50%;
+	top: 15px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before{
+	background: #333;
+    color: white;
+    border: 2px solid #27AE60;
+}
+
+#progressbar li.active:after{
+    border: 1.5px solid #27AE60;
+}
+
+#progressbar li.valid:before{
+    background: #27AE60;
+    color: #fff;
+}
+
+/********************************container images**************************************************/
+
+.upload-img{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top:2rem;
+    padding: 25px 60px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+}
+
+/****************change img***************************/
+.pro-img{
+    height: 170px;
+}
+  
+.pro-img #profiledisplay3{
+    display: block;
+    width: 170px;
+    height: 170px;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    border: 1px solid rgb(175, 175, 175);
+    border-style: dashed;
+    background: rgb(250, 246, 246);
+}
+
+#profiledisplay1.hidden-border,#profiledisplay2.hidden-border, #profiledisplay3.hidden-border{
+    border: 2px solid #007bff;
+    border-radius: 2px;
+    opacity: .7;
+}
+
+#profiledisplay3.hidden-border + .delete3{
+    opacity: 1;
+    visibility: visible;
+}
+
+.delete3{
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    top: 3.5rem;
+    left: 27.2rem;
+    cursor: pointer;
+    visibility: hidden;
+}
+  
+.pro-img #profileimage3{
+    display: none;
+}
+  
+  /*******************end profile-img*********************/

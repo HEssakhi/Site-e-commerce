@@ -1,0 +1,108 @@
+body{
+    overflow: auto;
+}
+.search_section{
+    width: auto;
+    height: 35vh;
+    padding: 30px;
+    background-image: url('img/img_homme.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.barre_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px 30px 50px;
+}
+
+.serch_homme_text{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: left;
+}
+
+.serch_homme_text #bienvenue{
+    font-size: 42px;
+    line-height: 38px;
+    color: #000;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.serch_homme_text #personne_sexe{
+    font-size: 38px;
+    line-height: 38px;
+    color: #ede734;
+    font-style: normal;
+    font-weight:600;
+    text-transform: uppercase;
+}
+
+.boite_recherche{
+    width: 700px;
+    padding: 20px 5px 20px 5px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.315);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.search_by_price{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 0px 0px 0px 5px;
+}
+
+.search_by_price input{
+    width: 150px;
+    height: 30px;
+    margin: 0px 10px 0px 0px;
+    padding: 0px 0px 0px 5px;
+}
+
+#category_list{
+    border-radius: 0px;
+}
+
+#search_input{
+    border-radius: 0px;
+}
+
+/**********result number*********/
+.number_result{
+    width: 800px;
+    margin: auto;
+    padding: 50px 30px 0px 30px;
+}
+
+.number_result .result span{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.border_result{
+    height: 2px;
+    background-color: #e1e2e2;
+    margin-top: 5px;
+}
+
+
+
+
+
+

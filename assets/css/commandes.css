@@ -1,0 +1,293 @@
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
+
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.container{
+    width: 80%;
+    margin:  0 auto;
+    padding: 25px 20px;
+}
+
+.container-wrap{
+    padding: 20px 10px;
+}
+
+.reservation-text{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/*************page logo and text***********************/
+.logo-name{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    animation: scale .5s forwards;
+}
+
+.logo-name img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+}
+
+.logo-name .border{
+    width: 2px;
+    height: 30px;
+    background: #ede734;
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.logo-name .site-nom{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    color: #000;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+}
+/******end logo***************/
+
+/*****************tips******************/
+.tips{
+    width: 29rem;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    opacity: 0;
+    animation: fadeUp .5s forwards;
+    animation-delay: .3s;
+}
+
+.tips p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5rem;
+}
+/************end tips*************/
+
+/************end logo and text**********************/
+
+/**************animation for logo and text****************/
+/**********animation for logo**********/
+@keyframes scale{
+    0%{
+      transform: scale(1.4);
+    }
+  
+    100%{
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+/**********end animation for logo***********/
+
+/***********animation for the tips************/
+@keyframes fadeUp{
+    0%{
+      transform: translateY(5rem);
+    }
+  
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /*******end animation for tips***************/
+/***********end animation*****************/
+
+/***********principal*************************/
+.principal{
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/***********barre-test*************************/
+.principal .barre-test{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: unset;
+    border-bottom: 1.5px solid rgb(160, 158, 158);
+}
+
+.principal .barre-test a{
+    font-size: 25px;
+    margin-left: 1rem;
+    padding-left: 5px;
+    padding-top: 1.5px;
+    text-decoration: none;
+}
+
+a .like{
+    color: #ede734;
+}
+
+a .dislike{
+    color: #000;
+}
+
+.principal .barre-test a .refresh{
+    padding-top: 1px;
+    font-size: 27px;
+    color: #7467d3;
+}
+
+.principal .barre-test .barre-border{
+    width: 1.5px;
+    height: 30px;
+    margin-left: 0.8rem;
+    background: rgb(168, 168, 168);
+}
+
+/***********barre-test*************************/
+.principal .list{
+    height: 40vh;
+    margin-top: 0.5rem;
+    padding:5px 10px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+
+
+.list a{
+    margin-bottom: 0.2rem;
+    text-decoration: none;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: 18rem 18rem 15rem;
+    padding: 7px 10px;
+    color: #000;
+    background: rgba(242,245,245,0.8);
+    border: 1px solid rgb(146, 145, 145);
+    border-radius: 2px;
+}
+
+.items:hover{
+    box-shadow: inset 0 1px 0 0 #dadce0, inset 0 -1px 0 0 #dadce0, inset 0 1px 0 0 rgba(60, 64, 67, .3),
+    0 1px 3px 1px rgba(60, 64, 67, .15);
+    z-index: 1;
+}
+
+.items .name{
+    width: 20rem;
+    padding: 3px 3px;
+}
+
+.items .date,.montant{
+    margin-left: 1rem;
+    padding: 3px 10px;
+    border-left: 1px solid rgb(146, 145, 145) ;
+}
+
+.demande{
+    width: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    padding: 0px 4px;
+    top: -2rem;
+    left: 46rem;
+}
+
+.demande a{
+    font-size: 20px;
+}
+
+.demande #dislike{
+    margin-left: 2rem;
+}
+
+/***************in case if there is no records*************************/
+/*.container-vide{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.container-vide .image{
+    margin: 0 auto;
+    width: 70%;
+    height: 80vh;
+    background-image: url(image/img10.png);
+    background-repeat: no-repeat;
+    background-size: 350px 350px;
+    background-position: center;
+    text-align: center;
+}
+
+.container-vide .image p{
+    margin: 0 auto;
+    margin-top: 26.5rem;
+    width: 35rem;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.image p span{
+    font-size: 19px;
+    font-weight: 550;
+}*/
+.container-vide{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.container-vide .image{
+    margin: 0 auto;
+    width: 70%;
+    height: 65vh;
+    background-image: url(image/img10.png);
+    background-repeat: no-repeat;
+    background-size: 350px 350px;
+    background-position: center;
+}
+
+/*.container-vide .article{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-vide .article p{
+    margin: 0 auto;
+    width: 28rem;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.article p span{
+    font-size: 19px;
+    font-weight: 550;
+}*/
+

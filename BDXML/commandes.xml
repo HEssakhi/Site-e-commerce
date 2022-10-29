@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<commandes xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="commandes.xsd">
+  
+  
+
+
+
+
+
+
+
+
+<commande><NumCmd>3</NumCmd><idU>1</idU><dateCmd>20/03/2021</dateCmd><etat>Valider</etat><Pro><idPro>5</idPro><qte>12</qte><taille>40</taille></Pro><paiement>non</paiement></commande>
+
+<commande><NumCmd>6</NumCmd><idU>1</idU><dateCmd>25/03/2021</dateCmd><etat>Valider</etat><Pro><idPro>1</idPro><qte>1</qte><taille>43</taille></Pro><paiement>non</paiement></commande>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<commande><NumCmd>12</NumCmd><idU>1</idU><dateCmd>30/03/2021</dateCmd><etat>en cours</etat><Pro><idPro>5</idPro><qte>10</qte><taille>38</taille></Pro><paiement>non</paiement></commande>
+<commande><NumCmd>13</NumCmd><idU>1</idU><dateCmd>30/03/2021</dateCmd><etat>en cours</etat><Pro><idPro>9</idPro><qte>1</qte><taille>M</taille></Pro><paiement>oui</paiement></commande>
+<commande><NumCmd>14</NumCmd><idU>12</idU><dateCmd>30/03/2021</dateCmd><etat>en cours</etat><Pro><idPro>11</idPro><qte>1</qte><taille>XS</taille></Pro><paiement>oui</paiement></commande>
+<commande><NumCmd>15</NumCmd><idU>13</idU><dateCmd>01/04/2021</dateCmd><etat>en cours</etat><Pro><idPro>5</idPro><qte>10</qte><taille>39</taille></Pro><paiement>non</paiement></commande>
+<commande><NumCmd>16</NumCmd><idU>1</idU><dateCmd>26/06/2021</dateCmd><etat>en cours</etat><Pro><idPro>12</idPro><qte>2</qte><taille>S</taille></Pro><paiement>non</paiement></commande>
+<commande><NumCmd>17</NumCmd><idU>1</idU><dateCmd>26/06/2021</dateCmd><etat>en cours</etat><Pro><idPro>3</idPro><qte>4</qte><taille>41</taille></Pro><paiement>non</paiement></commande>
+<commande><NumCmd>18</NumCmd><idU>1</idU><dateCmd>26/06/2021</dateCmd><etat>en cours</etat><Pro><idPro>3</idPro><qte>2</qte><taille>42</taille></Pro><paiement>non</paiement></commande>
+
+
+
+</commandes>

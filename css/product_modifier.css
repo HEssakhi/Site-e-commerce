@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.retour{
+    width: auto;
+    background-color: #ebedee;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    margin-top: 20px;
+    padding-left: 28px;
+}
+
+.retour .retour_link{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.retour_link button{
+    width: 6rem;
+    height: 25px;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.retour_link:hover button{
+    background-color: #000;
+    color: #fff;
+}
+
+.retour_link:hover span{
+    border-bottom: 1px solid #fff;
+}
+
+.retour_link span{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 13px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
+
+.retour_link .arrow{
+    font-size: 22px;
+}
+
+/**********les details de produit********/
+.product_details_container{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card_wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.img_display{
+    overflow: hidden;
+}
+
+.img_showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.img_showcase img{
+    min-width: 100%;
+}
+
+.img_select{
+    display: flex;
+}
+
+.img_item{
+    margin: 0.3rem;
+}
+
+.img_item:nth-child(1),
+.img_item:nth-child(2),
+.img_item:nth-child(3)
+{
+    margin-right: 0;
+}
+
+.img_item:hover{
+    opacity: 0.8;
+}
+/************************************************************/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    width: 700px;
+    padding: 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right:solid thin #cccecf;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.images{
+    padding: 0px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.slider img {
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    object-fit: contain;
+    border-bottom:solid thin #ebedee;
+}
+
+/**********informations**********/
+
+.infos_container{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
+/**********le nom de produit*************/
+.prodcut_title{
+    margin-top: 20px;
+}
+
+.prodcut_title span{
+    box-sizing: border-box;
+    font-size: 40px;
+    line-height: 38px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #000;
+    text-rendering: optimizeLegibility;
+    font-family: 'Dosis', sans-serif;
+    font-style: italic;
+}
+
+/*********les couleurs de produit************/
+.prodcut_taille span, .prodcut_quantite span{
+    color: #000;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    line-height: 18px;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*********le prix de produit************/
+.prodcut_marque{
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+.prodcut_marque span{
+    font-weight: 700;
+    white-space: nowrap;
+    color: #000;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/**********border**********/
+.border_taille{
+    width: 400px;
+    margin-left: 5px;
+    margin-top: 15px;
+    height: 1.5px;
+    background-color: #d1d2d3;
+}
+
+/********la taille de produit********/
+.prodcut_taille, .prodcut_quantite{
+    margin-top: 10px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    
+}
+
+.prodcut_taille span, .prodcut_quantite span{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/***********quantite de produit***********/
+.quantite_input{
+    margin: 10px 10px 10px 0px;
+}
+
+#qte_input,#prix_input{
+    width: 130px;
+    height: 20px;
+    border:solid thin #e1e2e2;
+    padding: 5px 5px 5px 10px;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: border ease 1s;
+}
+
+#qte_input:hover{
+    border: 1px solid #000;
+}
+
+#prix_input:hover{
+    border: 1px solid #000;
+}
+
+/**********liste des tailles**********/
+.taille_grid{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+
+
+/**********panier button**********/
+.command_button{
+    margin-top: 30px;
+}
+
+.add_to_command{
+    width: 18rem;
+    height: 3.1rem;
+    border: 1px solid #000;
+    margin: 0px 20px 0px 20px;
+}
+
+.add_to_command button:hover button{
+    color: #767677;
+}
+
+.add_to_command button{
+    width: 18rem;
+    height: 3.3rem;
+    appearance: none;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+    position: relative;
+    bottom: 5px;
+    right: 4px;
+}
+
+.add_to_command button .command_titre{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 50px;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.add_to_command button .arrow{
+    font-size: 27px;
+    color: #ede734;
+}

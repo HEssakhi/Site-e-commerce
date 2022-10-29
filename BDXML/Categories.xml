@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Categories xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="Categories.xsd">
+
+  <Categorie>
+    <idCat>1</idCat>
+    <nomCat>FOOTBALL</nomCat>
+  </Categorie>
+
+  <Categorie>
+    <idCat>2</idCat>
+    <nomCat>MARCHE</nomCat>
+  </Categorie>
+
+  <Categorie>
+    <idCat>3</idCat>
+    <nomCat>MUSCULATION</nomCat>
+  </Categorie>
+  
+  <Categorie>
+    <idCat>4</idCat>
+    <nomCat>TENNIS</nomCat>
+  </Categorie>
+
+  <Categorie>
+    <idCat>5</idCat>
+    <nomCat>SKI</nomCat>
+  </Categorie>
+
+  <Categorie>
+    <idCat>6</idCat>
+    <nomCat>GOLF</nomCat>
+  </Categorie>
+  
+  
+  
+  
+</Categories>

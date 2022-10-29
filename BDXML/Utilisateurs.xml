@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utilisateurs xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="utilisateurs.xsd">
+  
+  <utilisateur>
+    <idU>1</idU>
+    <nom>ali</nom>
+    <prenom>ahmed</prenom>
+    <tele>0611824963</tele>
+    <sexe>homme</sexe>
+    <gmail>ahmedali02@gmail.com</gmail>
+    <passW>B1234567bc</passW>
+    <fonction>client</fonction>
+    <image>null</image>
+  </utilisateur>
+
+  
+  
+
+
+<utilisateur>
+<idU>2</idU><nom>Essakhi</nom><prenom>Hamza</prenom><tele>0678987546</tele><sexe>homme</sexe><gmail>hamzaessakhi01@gmail.com</gmail><passW>A123456aa</passW><fonction>Administrateur</fonction><image>EssakhiHamza2.jpeg</image>
+</utilisateur>
+
+<utilisateur>
+<idU>5</idU><nom>lahssan</nom><prenom>ahmed</prenom><tele>0630203919</tele><sexe>Homme</sexe><gmail>ahmedal89i@gmail.com</gmail><passW>Qrygt568</passW><fonction>client</fonction><image>null</image>
+</utilisateur>
+
+
+<utilisateur>
+<idU>13</idU><nom>Sammoud</nom><prenom>Salaheddine</prenom><tele>0611824963</tele><sexe>Homme</sexe><gmail>sammoud.ses@gmail.com</gmail><passW>Salah100</passW><fonction>client</fonction><image>null</image>
+</utilisateur>
+
+
+
+</utilisateurs>

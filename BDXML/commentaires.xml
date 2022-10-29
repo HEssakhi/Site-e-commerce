@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<commentaires>
+  <commentaire>
+    <idCmt>1</idCmt>
+    <cmt>très belle</cmt>
+    <idU>1</idU>
+    <idPro>9</idPro>
+    <date>20/10/2021</date>
+  </commentaire>
+
+<commentaire><idCmt>19</idCmt><cmt>jolie</cmt><idU>1</idU><idPro>5</idPro><date>30/03/2021</date></commentaire>
+<commentaire><idCmt>20</idCmt><cmt>nice</cmt><idU>12</idU><idPro>5</idPro><date>30/03/2021</date></commentaire>
+
+
+
+</commentaires>

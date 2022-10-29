@@ -1,0 +1,375 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+html{
+   margin: 0;
+   padding: 0;
+   height: auto;
+   background-color: #01031e;
+}
+
+/*********************main*************************/
+
+main{
+	height: 300vh;
+}
+
+.tips{
+	width: 75%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+}
+
+.tips-img .astuce-img{
+    padding-left: 24rem;
+	width: 15rem;
+}
+
+/*Start reusable*/
+.container-portfolio{
+	width: 80%;
+	max-width: 120rem;
+	height: 200%;
+	margin: 0 auto;
+	position: relative;
+	top: 7rem;
+}
+  /*End reusable*/
+  
+  /*Start portfolio*/
+  .portfolio{
+	background: #01031e;
+	height: 125vh;
+  }
+  .portfolio-item{
+	height: 350px;
+	max-width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 2rem;
+	position: relative;
+	top: 1rem;
+  }
+  
+  .portfolio-item:last-child{
+	margin-bottom: 0;
+  }
+  
+  .portfolio-img{
+	height: 350px;
+	width: 500px;
+	position: relative;
+	margin-left: -5.5rem;
+	left: 5.2rem;
+  }
+  
+  .portfolio-img img{
+	width: 400px;
+	height: 300px;
+	border: 1px solid #1da1f2;
+	position: relative;
+	left: 3rem;
+  }
+
+  .portfolio-description img{
+	width: 400px;
+	height: 300px;
+	position: relative;
+	left: 2.3rem;
+	border: 1px solid orange;
+	border-style: dashed;
+  }
+
+  .portfolio-description #tips2, .portfolio-description #tips4{
+	  position: relative;
+	  left: 3rem;
+  }
+
+  .portfolio-img #login, .portfolio-img #compte{
+	  position: relative;
+	  left: 2.5rem;
+  }
+
+  
+  .portfolio-description{
+	height: 350px;
+	width: 500px;
+	margin-left: 5rem;
+	position: relative;
+	left: 0.3rem;
+  }
+
+  
+  #description2{
+	position: relative;
+	left: -5.3rem;
+  }
+  
+  #img2{
+	position: relative;
+	left: 0.2rem;
+  }
+  
+  .portfolio-description h1{
+	font-size: 3rem;
+	font-weight: 300;
+	padding: 5rem;
+	text-align: center;
+	margin-top: -2rem;
+	color: #ffd500;
+  }
+  
+  .portfolio-description p{
+	font-size: 20px;
+	text-align: center;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	margin-top: -5rem;
+	color: #fff;
+  }
+  
+  .portfolio-description .cta{
+	width: 12rem;
+	height: 2rem;
+	text-align: center;
+	display: inline-block;
+	margin-top: 2rem;
+	margin-left:11.2rem;
+	padding-top: 0.5rem;
+	border-radius: 30px;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	color: #01031e;
+	transition: color 650ms;
+	background-color: #fdb096;
+	text-decoration: none;
+  }
+  
+  .portfolio-description .cta:hover{
+	color: #2f67cd;
+  }
+  
+  /***********end portfolio*****************************/
+
+/*********************end main**********************/
+
+/*********************footer***********************************/
+
+footer{
+	background: #01031e;
+	border: 2px solid black;
+  }
+  
+  .footer-border{
+	box-sizing: border-box;
+	border: 1.5px solid black;
+  }
+  
+  .border-img{
+	width: 1.2rem;
+	transform:  translate(-50%, -50%);
+	position: relative;
+	left: 50%;
+  }
+  
+.footer-distributed{
+	background-color: #01031e;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: auto;
+    height: 15rem;
+	font-size: 16px;
+	padding: 55px 50px;
+	margin-top: 0vh;
+	display: flex;
+	justify-content: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	margin-top: -3rem;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 1.5rem;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed .footer-left #copyright{
+	width: 10rem;
+	font-family: 'Manrope', sans-serif;
+	font-size: 13px;
+	color: #ffd500;
+	position: relative;
+	top: 3.5rem;
+	left: 6.7rem;
+	text-align: center;
+	font-weight: 600;
+}
+
+.footer-distributed .footer-left #copymark{
+	color: #ccc;
+	font-size: 12px;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	max-width: 300px;
+	margin:auto;
+	position: relative;
+	top: 2.5rem;
+	left: -5px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  #ffffff;
+	margin-left: 10px;
+	margin-top: 0.7rem;
+	text-align: center;
+}
+
+.footer-distributed .footer-links a:hover{
+	border-bottom: 1.5px solid #ffd500;
+	transition: left .3s ;
+}
+
+.footer-distributed .footer-links a span{
+	text-transform: uppercase;
+}
+
+.footer-distributed .footer-links #point{
+	text-align: center;
+	color: #ffffff;
+	margin-left: 6px;
+	position: relative;
+	top: -3px;
+}
+/*********end footer left**************/
+
+/* Footer Center */
+.footer-distributed .footer-center{
+  width: 30%;
+}
+
+.footer-distributed .footer-center .logo{
+  text-align: center;
+  position: relative;
+}
+/****end footer center*****/
+
+/* Footer Right */
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-right p{
+	font-family: 'Manrope', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 0.07rem;
+	position: relative;
+	top: 2rem;
+	line-height: 25px;
+}
+
+.footer-distributed .footer-right p #services{
+	color:#ffd500 ;
+	font-size: 13px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 8rem;
+	text-align: center;
+	position: relative;
+	top: -5rem;
+}
+
+.footer-distributed .footer-icons a, .contact-img .footer-icons a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+}
+
+.footer-distributed .footer-icons i{
+  text-align: center;
+  position: relative;
+}
+
+.footer-distributed .footer-icons #facebook{
+	color: #4267B2;
+  background-color: #fff;
+  text-align: center;
+}
+
+.footer-distributed .footer-icons #google{
+	color:#fff;
+	background-color: #d34836;
+}
+
+.footer-distributed .footer-icons #linkedin{
+	color: #fff;
+	background-color: #2867b2;
+}
+
+.footer-distributed .footer-icons #twitter{
+	color: #1da1f2;
+	background-color: #fff;
+}
+/*********end footer right****************/
+
+
+
+/**********end bienvenue***************/
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+/*************************end footer******************************/

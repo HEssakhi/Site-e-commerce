@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.header_container nav{
+    box-shadow: 0px 1px 1px 0px #3b3b3b44;
+ }
+
+ .first{
+    padding: 20px;
+ } 
+
+ .order_review{
+    width: 155vh;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 2px #61616144;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    padding: 10px;
+}
+
+.products{
+    width: 95vh;
+    padding: 20px 20px 0px 20px ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-right: 1px solid #999;
+}
+
+.review_title span{
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    line-height: 18px;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', sans-serif;
+}
+
+.border_{
+    height: 1px;
+    width: 92vh;
+    background-color: #3b3b3b44;
+    margin-top: 10px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    padding: 15px;
+    margin-top: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.produit_items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    border:solid thin #ebedee;
+    padding: 3px;
+    margin-bottom: 10px;
+    transition: border ease 1s;
+}
+
+.produit_items:hover{
+    border: 1px solid #000;
+}
+
+.product-img{
+    height: 200px;
+}
+
+.product-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.product-details{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.product_name{
+    margin-top: 10px;
+}
+
+.product_name span{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.details{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.details div{
+    margin-top: 15px;
+    font-size: 15px;
+    color: #999;
+}
+
+.liv_total{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    padding: 10px 10px 0px 10px;
+}
+
+
+
+.border2{
+    width: 45vh;
+    background-color: #000;
+}
+
+.montant{
+    box-shadow: 1px 1px 1px 1px #61616144;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    color: #000;
+    background-color: #ede734;
+}
+
+.mon_title{
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    line-height: 18px;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.mon_details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.mon_details div{
+    display: grid;
+    grid-template-columns: 9rem 9rem;
+}
+
+.mtn{
+    font-size: 14px;
+    text-align: left;
+}
+
+.mtn_rep{
+    text-align: right;
+}
+
+.livrer_button{
+    margin-top: 30px;
+}
+
+.add_to_livre{
+    width: 19rem;
+    height: 3.1rem;
+    border: 1px solid #000;
+    margin: 0px 0px 0px 2px;
+}
+
+.add_to_livre:hover button{
+    color: #767677;
+}
+
+.add_to_livre button{
+    width: 19rem;
+    height: 3.3rem;
+    appearance: none;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    position: relative;
+    bottom: 5px;
+    right: 4px;
+}
+
+.add_to_livre button .livre_titre{
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 50px;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.add_to_livre button .arrow{
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

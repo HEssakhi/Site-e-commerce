@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<produits xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="produits.xsd">
+
+  <produit>
+    <idPro>1</idPro>
+    <titre>CHAUSSURE</titre>
+    <idCat>1</idCat>
+    <prix>12</prix>
+    <sexe>homme</sexe>
+    <stock>2963</stock>
+    <taille>38</taille>
+    <taille>39</taille>
+    <taille>40</taille>
+    <taille>41</taille>
+    <taille>42</taille>
+    <taille>43</taille>
+    <taille>44</taille>
+    <taille>45</taille>
+    <image>img1.jfif</image>
+    <marque>PUMA</marque>
+  </produit>
+
+  <produit>
+    <idPro>2</idPro>
+    <titre>BALLON</titre>
+    <idCat>1</idCat>
+    <prix>100</prix>
+    <sexe>enfant</sexe>
+    <stock>2361</stock>
+    <taille>Unique</taille>
+    <image>img2.jpg</image>
+    <marque>PUMA</marque>
+  </produit>
+  
+  <produit>
+    <idPro>3</idPro>
+    <titre>CHAUSSURE</titre>
+    <idCat>1</idCat>
+    <prix>100</prix>
+    <sexe>homme</sexe>
+    <stock>3972</stock>
+    <taille>39</taille>
+    <taille>40</taille>
+    <taille>41</taille>
+    <taille>42</taille>
+    <taille>43</taille>
+    <image>img3.jpg</image>
+    <marque>PUMA</marque>
+  </produit>
+
+  
+
+  <produit>
+    <idPro>5</idPro>
+    <titre>CHAUSSURE</titre>
+    <idCat>2</idCat>
+    <prix>60</prix>
+    <sexe>homme</sexe>
+    <stock>6951</stock>
+    <taille>38</taille>
+    <taille>39</taille>
+    <taille>40</taille>
+    <taille>41</taille>
+    <taille>42</taille>
+    <taille>43</taille>
+    <taille>44</taille>
+    <taille>45</taille>
+    <image>img5.jpg</image>
+    <marque>SKECHERS</marque>
+  </produit>
+  
+   <produit>
+    <idPro>6</idPro>
+    <titre>CHAUSSURE</titre>
+    <idCat>2</idCat>
+    <prix>300</prix>
+    <sexe>femme</sexe>
+    <stock>1183</stock>
+    <taille>38</taille>
+    <taille>39</taille>
+    <taille>40</taille>
+    <taille>41</taille>
+    <image>img6.jpg</image>
+    <marque>SKECHERS</marque>
+  </produit>
+
+  <produit>
+    <idPro>7</idPro>
+    <titre>CHAUSSURE</titre>
+    <idCat>2</idCat>
+    <prix>390</prix>
+    <sexe>enfant</sexe>
+    <stock>1177</stock>
+    <taille>27</taille>
+    <taille>28</taille>
+    <taille>29</taille>
+    <taille>30</taille>
+    <taille>31</taille>
+    <image>img7.jpg</image>
+    <marque>SKECHERS</marque>
+  </produit>
+  
+   <produit>
+    <idPro>8</idPro>
+    <titre>CASQUETTE</titre>
+    <idCat>4</idCat>
+    <prix>290</prix>
+    <sexe>homme</sexe>
+    <stock>8247</stock>
+    <taille>Unique</taille>
+    <image>img8.jpg</image>
+    <marque>ARTENGO</marque>
+  </produit>
+
+  <produit>
+    <idPro>9</idPro>
+    <titre>JUPE</titre>
+    <idCat>4</idCat>
+    <prix>139</prix>
+    <sexe>femme</sexe>
+    <stock>8186</stock>
+    <taille>XL</taille>
+    <taille>M</taille>
+    <taille>S</taille>
+    <taille>L</taille>
+    <image>img9.jpg</image>
+    <marque>ARTENGO</marque>
+  </produit>
+
+  <produit>
+    <idPro>10</idPro>
+    <titre>BANDEAU</titre>
+    <idCat>4</idCat>
+    <prix>69</prix>
+    <sexe>homme</sexe>
+    <stock>8228</stock>
+    <taille>Unique</taille>
+    <image>img10.jpg</image>
+    <marque>ARTENGO</marque>
+  </produit>
+  
+  <produit>
+    <idPro>11</idPro>
+    <titre>TEE SHIRT</titre>
+    <idCat>4</idCat>
+    <prix>234</prix>
+    <sexe>femme</sexe>
+    <stock>8163</stock>
+    <taille>XL</taille>
+    <taille>XS</taille>
+    <taille>M</taille>
+    <taille>S</taille>
+    <taille>L</taille>
+    <image>img11.jpg</image>
+    <marque>ARTENGO</marque>
+  </produit>
+
+  <produit>
+    <idPro>12</idPro>
+    <titre>VESTE</titre>
+    <idCat>5</idCat>
+    <prix>599</prix>
+    <sexe>homme</sexe>
+    <stock>1153</stock>
+    <taille>XL</taille>
+    <taille>XS</taille>
+    <taille>M</taille>
+    <taille>S</taille>
+    <taille>L</taille>
+    <image>img12.jpg</image>
+    <marque>ARTENGO</marque>
+  </produit>
+
+<produit><idPro>13</idPro><titre>MAILLOT Dortmund</titre><prix>167</prix><idCat>1</idCat><sexe>homme</sexe><stock>103</stock><marque>Puma</marque><taille>XL</taille><taille>S</taille><image>Barcelona13.png</image></produit></produits>

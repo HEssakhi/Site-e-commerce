@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.retour{
+    width: auto;
+    background-color: #ebedee;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    margin-top: 20px;
+    padding-left: 28px;
+}
+
+.retour .retour_link{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.retour_link button{
+    width: 6rem;
+    height: 25px;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.boite_recherche .form #search_input{
+    height: 30.5px;
+}
+
+.retour_link:hover button{
+    background-color: #000;
+    color: #fff;
+}
+
+.retour_link:hover span{
+    border-bottom: 1px solid #fff;
+}
+
+.retour_link span{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 13px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
+
+.retour_link .arrow{
+    font-size: 22px;
+}
+
+/**********les details de produit********/
+.product_details_container{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card_wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.img_display{
+    overflow: hidden;
+}
+
+.img_showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.img_showcase img{
+    min-width: 100%;
+}
+
+.img_select{
+    display: flex;
+}
+
+.img_item{
+    margin: 0.3rem;
+}
+
+.img_item:nth-child(1),
+.img_item:nth-child(2),
+.img_item:nth-child(3)
+{
+    margin-right: 0;
+}
+
+.img_item:hover{
+    opacity: 0.8;
+}
+/************************************************************/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card {
+    width: 880px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right:solid thin #cccecf;
+}
+
+.imgs {
+    cursor: pointer;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.slider img {
+    width: 880px;
+    height: 550px;
+    margin: auto;
+    object-fit: contain;
+    border-bottom:solid thin #ebedee;
+}
+
+.img-slider {
+    display: flex;
+    height: 110px;
+    justify-content:center;
+    margin: auto;
+    margin-top: 15px;
+    padding: 2px 0px 2px 0px;
+}
+
+.img-slider div {
+    width: 110px;
+    height: 110px;
+    margin: 0px 1px 0px 1px;
+    border:solid thin #d1d2d3;
+    transition: border ease 1s;
+}
+
+.img-slider div:hover{
+    border: 1px solid #000;
+}
+
+.img-slider img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+/**********informations**********/
+
+.infos_container{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    padding-top: 20px;
+}
+
+/**********le nom de produit*************/
+.prodcut_title{
+    margin-top: 20px;
+}
+
+.prodcut_title span{
+    box-sizing: border-box;
+    font-size: 40px;
+    line-height: 38px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #000;
+    text-rendering: optimizeLegibility;
+    font-family: 'Dosis', sans-serif;
+    font-style: italic;
+}
+
+/*********les couleurs de produit************/
+.prodcut_taille span, .prodcut_quantite span{
+    color: #000;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    line-height: 18px;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*********le prix de produit************/
+.prodcut_price{
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+.prodcut_price span{
+    font-weight: 700;
+    white-space: nowrap;
+    color: #000;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/**********border**********/
+.border_taille{
+    width: 400px;
+    margin-left: 5px;
+    margin-top: 15px;
+    height: 1.5px;
+    background-color: #d1d2d3;
+}
+
+/********la taille de produit********/
+.prodcut_taille, .prodcut_quantite{
+    margin-top: 10px;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    
+}
+
+.prodcut_taille span, .prodcut_quantite span{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/***********quantite de produit***********/
+.quantite_input{
+    margin: 10px 10px 10px 10px;
+}
+
+#qte_input{
+    width: 100px;
+    height: 20px;
+    border:solid thin #e1e2e2;
+    padding: 5px 5px 5px 10px;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: border ease 1s;
+}
+
+#qte_input:hover{
+    border: 1px solid #000;
+}
+
+/**********liste des tailles**********/
+.taille_grid{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.taille_grid form #category_list{
+    width: 180px;
+    margin: 0px;
+    height: 34.5px;
+    outline: none;
+    line-height: 32px;
+    background-color: #fff;
+    box-sizing: border-box;
+    background-image:
+    linear-gradient(45deg, transparent 50%, black 50%),
+    linear-gradient(135deg, black 50%, transparent 50%),
+    linear-gradient(to right, #000, #000);
+    background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+    background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+    background-repeat: no-repeat;
+    border:solid thin #e1e2e2;
+    -moz-appearance:none;
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    transition: border ease 1s;
+}
+
+.taille_grid form #category_list:hover{
+    border: 1px solid #000;
+}
+
+._links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/**********panier button**********/
+.command_button{
+    margin-top: 30px;
+}
+
+.add_to_command{
+    width: 18rem;
+    height: 3.1rem;
+    border: 1px solid #000;
+    margin: 0px 20px 0px 20px;
+
+}
+
+.add_to_command button:hover button{
+    color: #767677;
+}
+
+.add_to_command button{
+    width: 18rem;
+    height: 3.3rem;
+    appearance: none;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+    position: relative;
+    bottom: 5px;
+    right: 4px;
+}
+
+.add_to_command button .command_titre{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 50px;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.add_to_command button .arrow{
+    font-size: 27px;
+}
+
+/**********commentaire*******/
+.comment_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    padding: 0px 0px 30px 0px;
+}
+
+.first_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.first_title strong{
+    font-size: 1.5rem;
+    color: #1b1919;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 80px;
+    padding: 0px 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.comment_list{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: auto;
+    padding: 10px 0px 30px 0px;
+}
+
+.second_title{
+    padding: 5px 15px;
+    margin-left: 40px;
+}
+
+.write_comment{
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 0px 15px 0px 15px;
+}
+
+/*****input_comment**********/
+.write_comment input{
+    width: 750px;
+    height: 25px;
+    padding: 5px 10px;
+    font-size: 15px;
+    border:solid thin #ebedee;
+    background-color: #ebedee31;
+    outline: none;
+    transition: border ease 1s;
+}
+
+.write_comment input:focus{
+    border: 1px solid #000;
+}
+
+/*******comment_button*********/
+.write_comment button{
+     width: 100px;
+     font-size: 15px;
+     height: 37px;
+     color: #000;
+     outline: none;
+     background-color: #ede734;
+     border:solid thin #ede734;
+     cursor: pointer;
+     transition: border ease 1s;
+}
+
+.write_comment button:hover{
+    border: 1px solid #000;
+}
+
+/********read comments**********/
+.read_comment{
+    width: 814px;
+    border:solid thin #e1e2e2;
+    margin-top: 20px;
+    margin-left: 65px;
+    padding: 3px 25px 3px 25px;
+    display: grid;
+    grid-template-columns: 12rem 41.5rem;
+    transition: border ease 1s;
+}
+
+.read_comment:hover{
+    border: 1px solid #000;
+}
+
+/*******comment writer infos***********/
+.comment_writer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0px 5px 0px 0px;
+}
+
+.comment_writer img{
+    width: 40px;
+    height: 40px;
+}
+
+.writer_infos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-left: 5px;
+}
+
+#name{
+    margin-top: 2px;
+    font-size: 14px;
+    color: #000;
+}
+
+#time{
+    margin-top: 2px;
+    font-size: 11.5px;
+    color: #999;
+}
+
+/********comment content review*********/
+.comment_content{
+    border-left: 1px solid #dbdbdb;
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment_content span{
+    margin-top: 3px;
+    max-height: 100px;
+    font-size: 14px;
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: 17px;
+}
+
+
+
+

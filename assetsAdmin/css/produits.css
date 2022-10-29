@@ -1,0 +1,581 @@
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
+
+
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.container .item_wrap .item .xop-section {
+	max-width: 960px;
+	margin: 0 auto;
+    padding: 3% 2%;
+    background-color: #fff;
+    box-shadow: inset 0 1px 0 0 #dadce0, inset 0 -1px 0 0 #dadce0, inset 0 1px 0 0 rgba(60, 64, 67, .3),
+    0 1px 3px 1px rgba(60, 64, 67, .15);
+    z-index: 1;
+    display: block;
+}
+
+/*************the head*******************************/
+.container .item_wrap .item .xop-section .tannonce{
+    max-width:14%;
+    height: 2.65rem;
+    margin: 0 auto;
+    animation: scale .5s forwards;
+}
+
+.container .item_wrap .item .xop-section .tannonce img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+}
+
+.container .item_wrap .item .xop-section .tannonce .border1{
+    width: 2px;
+    height: 30px;
+    background: #ffd500;
+    position: relative;
+    left: 2.8rem;
+    bottom: 2.45rem;
+}
+
+.container .item_wrap .item .xop-section .tannonce .nom{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    color: #000;
+    position: relative;
+    left: 3.25rem;
+    bottom: 4.5rem;
+}
+/************end the head**********************/
+
+/***********tips*******************/
+.container .item_wrap .item .xop-section .tips{
+    width: 29rem;
+    height: 5.5rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 0;
+    opacity: 0;
+    animation: fadeUp .5s forwards;
+    animation-delay: .3s;
+}
+
+.container .item_wrap .item .xop-section .tips p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+/***********end tips****************/
+/**********animation for the head**********/
+@keyframes scale{
+    0%{
+      transform: scale(1.5);
+    }
+  
+    100%{
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+
+/***********animation for the tips************/
+@keyframes fadeUp{
+    0%{
+      transform: translateY(5rem);
+    }
+  
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /*******end animation for tips***************/
+/***********end animation*****************/
+
+.container .item_wrap .item .xop-grid {
+    max-height: 80vh;
+	margin: 10px 0 0 0;
+    padding: 20px 5px 10px 5px;
+	list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: flex-start;
+    width: 100%;
+    box-shadow: inset 0 1px 0 0 #dadce0, inset 0 -1px 0 0 #dadce0, inset 0 1px 0 0 rgba(60, 64, 67, .3),
+    0 1px 3px 1px rgba(60, 64, 67, .15);
+    z-index: 1;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.container .item_wrap .item .xop-grid:after {
+	clear: both;
+}
+
+.container .item_wrap .item .xop-grid:after, .xop-box:before {
+	content: '';
+	display: table;
+}
+
+.container .item_wrap .item .xop-grid li {
+	width: 170px;
+	height: 170px;
+   
+    margin: 15px 20px 45px 30px;
+}
+
+.container .item_wrap .item .xop-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+
+.container .item_wrap .item .xop-box:hover {
+	transform: scale(1.05); 
+}
+
+/**/
+.container .item_wrap .item .xop-img-1 {
+	background: #fff;
+    height: 125%;
+    border: solid thin #a4a5a5;
+}
+
+.container .item_wrap .item .xop-info {
+    position: relative;
+	width: 100%;
+    height: 100%;
+}
+
+.xop-info img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px ;
+    border-bottom: 1px solid #a4a5a5;
+}
+
+.xop-info .infos_prod{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 165px;
+    left: 57px;
+    z-index: 1;
+    color: #000;
+}
+
+.container .item_wrap .item .xop-info .infos_prod .name {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+    text-align: center;
+}
+
+.container .item_wrap .item .xop-info .infos_prod .price {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 12px;
+    text-align: center;
+}
+/***/
+.container .item_wrap .item .xop-section .principal{
+    width: 85%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 4.3rem;
+    border-bottom: 1.5px solid lightgray;
+}
+
+.principal a{
+    text-decoration: none;
+}
+
+
+/*******trash*****************/
+.principal button{
+    width: 2rem;
+    margin-left: 3.5rem;
+    position: relative;
+    bottom: 0.6rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.principal .trash{
+     font-size: 25px;
+     position: relative;
+     top: 0.65rem;
+     left: -0.4rem;
+     padding: 5px 6px 5px 6px;
+     color: #000;
+}
+
+/*********end trash********************/
+
+/********refresh*******************/
+.principal a{
+    font-size: 30px;
+    margin-left: 1.5rem;
+    position: relative;
+    top: 0.15rem;
+    text-decoration: none;
+    color: #000;
+}
+
+/***********checkbox all******************************/
+.container-check{
+    display: block;
+    position: absolute;
+    top: 80%;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+  /* Create a custom checkbox */
+.checkmark{
+    position: absolute;
+    top: 0.80rem;
+    left: 1.5rem;
+    height: 18px;
+    width: 18px;
+    border-radius: 3px;
+    background-color: #eee;
+    border: 1px solid gray;
+}
+
+  /* On mouse-over, add a grey background color */
+.container-check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+  /* When the checkbox is checked, add a blue background */
+.container-check input:checked ~ .checkmark {
+    background-color: #01031e;
+    border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.container-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 6px;
+    height: 11px;
+    border: solid #fff;
+    border-width: 0 2.5px 2.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/********end checkbox******************************/
+
+/******border********************/
+.container .item_wrap .item .xop-section .principal .border{
+    width: 1.6rem;
+    height: 1px;
+    background: rgb(160, 158, 158);
+    border-radius: 2px;
+    transform: rotate(90deg);
+    position: relative;
+    left: 5.7rem;
+    top: 1.3rem;
+}
+/*******end border******************/
+
+/****************checkbox for the cards********************/
+.single{
+    display: block;
+    position: absolute;
+    top: 80%;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .single input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+  /* Create a custom checkbox */
+.checkmark1 {
+    position: absolute;
+    top: -10rem;
+    left: 9rem;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+  /* On mouse-over, add a grey background color */
+.single:hover input ~ .checkmark1 {
+    background-color: #ccc;
+}
+  
+  /* When the checkbox is checked, add a blue background */
+.single input:checked ~ .checkmark1 {
+    background-color: #ffd500;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.single input:checked ~ .checkmark1:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.single .checkmark1:after {
+    left: 6px;
+    top: 2.5px;
+    width: 6px;
+    height: 11px;
+    border: solid #01031e;
+    border-width: 0 2.5px 2.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/***************in case if there is no records*************************/
+.container-vide{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.container-vide .image{
+    margin: 0 auto;
+    width: 70%;
+    height: 65vh;
+    background-image: url(image/img10.png);
+    background-repeat: no-repeat;
+    background-size: 350px 350px;
+    background-position: center;
+}
+
+/*.container-vide .article{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-vide .article p{
+    margin: 0 auto;
+    width: 28rem;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.article p span{
+    font-size: 19px;
+    font-weight: 550;
+}*/
+
+.border_vide{
+    height: 1px;
+    background-color: #b3b3b3;
+    margin-top: 15px;
+}
+
+.ajouter_produit{
+    width: 900px;
+    margin: auto;
+}
+
+.ajouter_produit p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    color: #575555;
+    cursor: pointer;
+}
+
+.ajouter_produit p:hover{
+    color: #000;
+}
+
+.ajouter_produit span{
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    line-height: 18px;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5px;
+}
+
+.formulaire{
+    padding: 10px;
+    width: 880px;
+    margin: auto;
+    display: block;
+}
+
+.produit_cara{
+    box-shadow: 1px 1px 1px 1px #3b3b3b44;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:left;
+}
+
+.produit_cara div{
+    margin-bottom: 10px;
+}
+
+.produit_cara__titre span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.produit_name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: 1px solid #a4a5a5;
+    padding: 10px 10px 0px 5px;
+    justify-content: left;
+    padding-left: 5px;
+    width: 810px;
+}
+
+.produit_name input,select{
+    width: 270px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #000;
+    box-sizing: border-box;
+    border-collapse: separate;
+    outline: none;
+    vertical-align: middle;
+    background-color: transparent;
+    border:solid thin #a4a5a5;
+    transition: border ease 1s;
+    margin-bottom: 10px;
+ }
+
+.produit_name #cate,#prd_qte,#prd_prix,#prd_sexe,#prd_size{
+    width: 230px;
+}
+
+#cate,#prd_qte,#prd_sexe,#prd_size,.images{
+    margin-left: 20px;
+}
+
+#custom-button {
+    padding: 11px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    background-color: transparent;
+    color: #000;
+    border:solid thin #a4a5a5;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #custom-button:hover {
+    border: 1px solid #000;
+  }
+  
+  #custom-text {
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #000;
+  }
+
+  .border_vide_2{
+      height: 1px;
+      background-color: #b6b6b6;
+      width: 500px;
+      margin-left: 5px;
+  }
+
+  .produit_sub{
+    width: 700px;
+    margin: 10px 5px;
+}
+
+  .produit_sub button{
+    padding: 7px 20px;
+    background-color: #ede734;
+    color: #000;
+    outline: none;
+    border: 1px solid #ede734;
+    cursor: pointer;
+    transition: border ease 1s;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.produit_sub button:hover{
+    border: 1px solid #000;
+}
+
+
+

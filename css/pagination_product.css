@@ -1,0 +1,144 @@
+body{
+	margin:0;
+	font-family: sans-serif;
+	background-color: #fff;
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.gallery{
+	width: 100%;
+	padding: 30px 0px 50px 0px;
+}
+
+.gallery-items{
+	width: 71rem;
+	margin: auto;
+    display: flex;
+	flex-direction: row;
+	padding-bottom: 20px;
+	border-bottom:solid thin #ebedee;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery .gallery-items a{
+	text-decoration: none;
+    margin: 10px 10px 10px 10px;
+}
+
+.gallery .gallery-items a .item_link{
+	width:260px;
+	height:330px;
+	border:solid thin #ebedee;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	transition: border ease 1s;
+	box-sizing: border-box;
+	justify-content: start;
+}
+
+.gallery .gallery-items a .item_link:hover{
+	border: 1px solid #000;
+}
+
+.gallery .gallery-items a.hide{
+	display: none;
+}
+
+.gallery .gallery-items a.show{
+	display: block;
+	animation: show .5s ease;
+}
+@keyframes show{
+    0%{
+    	opacity:0;
+    	transform: scale(0.9);
+    }
+    100%{
+    	opacity:1;
+    	transform: scale(1);
+    }
+}
+
+
+.gallery .gallery-items a .item_link img{
+	width: 100%;
+}
+
+.gallery .gallery-items a .item_link .caption{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: left;
+	float: left;
+    width: 100%;
+	padding: 5px 10px 0px 10px;
+	background-color: #fff;
+	border-top: solid thin #cbcccc;
+	color:#000;
+	font-family: 'calibri';
+}
+
+.gallery .gallery-items a .item_link .caption p{
+	margin: 2px;
+}
+
+.item_link .caption #titre{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.item_link .caption #prix{
+	font-size: 13px;
+}
+
+.item_link .caption #cate{
+	color:#cbcccc;
+	font-size: 13px;
+}
+
+.gallery .pagination{
+	width: 100%;
+	float: left;
+	padding:15px;
+	text-align: center;
+	margin-top: 20px;
+}
+.gallery .pagination div{
+	display: inline-block;
+	margin:0 10px;
+}
+.gallery .pagination .page{
+	color:gray;
+}
+.gallery .pagination .prev,.gallery .pagination .next{
+ color:#000;
+ border:1px solid #000;
+ font-size:15px;
+ padding:7px 15px;
+ cursor: pointer;
+}
+
+.gallery .pagination .prev.disabled,
+.gallery .pagination .next.disabled{
+	border-color: gray;
+	color:gray;
+	pointer-events: none;
+}
+
+
+
+
+

@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html{
+    background-color: #e9ebee;
+}
+
+.the_container{
+    width: 150vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+.container{
+    width: 83vh;
+    border: solid thin rgb(221, 220, 220);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.title{
+    border-bottom: 1px solid #999;
+    padding: 15px 20px;
+}
+
+.title span{
+    font-size: 22px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.input{
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.input span{
+    font-size: 15.5px;
+    margin-top: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    padding: 0px 10px 0px 0px;
+}
+
+.input input{
+    width: 447px;
+    border: solid thin #999;
+    border-radius: 4px;
+    height: 35px;
+    margin-top: 20px;
+    padding: 6px 10px;
+    font-size: 16px;
+    color: #999;
+}
+
+.paiement{
+    margin-top: 15px;
+}
+
+.paiement span{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/*********mode de paiement**************/
+
+.radio-box{
+    width: 99%;
+    height: 60px;
+    padding: 5px 0;
+	display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.radio-box label input{
+	display: none;
+}
+
+.radio-box label {
+    width: 65%;
+	display: block;
+	cursor: pointer;
+	margin-left: 15px;
+    position: relative;
+}
+
+.radio-box label .circle{
+	height: 13px;
+	width: 13px;
+	border:2px solid #7f8c8d;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	left:25px;
+	top: 13.5px;
+	transition: border-color .5s ease;
+}
+
+.radio-box label .circle::before{
+	content: '';
+	height: 7px;
+	width: 7px;
+	background-color: #ede734;
+	position: absolute;
+	left:0;
+	top:0;
+	border-radius: 50%;
+	box-sizing: border-box;
+	margin-left:3.1px;
+	margin-top:3.3px;
+	transition: transform .5s ease;
+	transform: scale(0);
+}
+
+.radio-box label span{
+	font-size: 14px;
+	color: #7f8c8d;
+    transition:color .5s ease;
+    position: absolute;
+    left: 35px;
+    padding: 0px 0px 0px 15px;
+    text-align: left;
+}
+
+.radio-box label input:checked + .circle{
+	border-color:#ede734;
+}
+
+.radio-box label input:checked + .circle::before{
+	transform: scale(1);
+}
+
+.radio-box label input:checked + .circle + span{
+	color:#01031e;
+}
+
+.rechercher{
+    border-top: 1px solid #999;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    padding: 17px 25px;
+}
+
+.rechercher button{
+    padding: 7px 15px;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    outline: none;
+    border-radius: 4px;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+#reset{
+     margin-right: 10px;
+     color: #fff;
+     background-color: #000;
+}
+
+#submit{
+    padding: 7.3px 20px;
+    background-color: #ede734;
+}
+
+.select-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.select-box select{
+    height: 48px;
+    padding: 10px 10px;
+    line-height:18px;
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+    width: 48%;
+    border: solid thin #999;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.select-box:after{
+    content: "";
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    left: 29.9rem;
+    top: 50.3%;
+    margin-top: -4px;
+    border-top: 2px solid #999;
+    border-left: 2px solid #999;
+    transform: rotate(226deg);
+    pointer-events: none;
+}
+
+#postal{
+    width: 210px;
+    margin: 0px 0px 0px 15px;
+}
+
+.container2{
+    width: 50vh;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.montant{
+    box-shadow: 1px 1px 1px 1px #61616144;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    color: #000;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.mon_title{
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    line-height: 18px;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.mon_details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.mon_details div{
+    display: grid;
+    grid-template-columns: 9rem 9rem;
+    padding: 10px 0px 10px 0px;
+}
+
+.mtn{
+    text-align: left;
+}
+
+.total,.total2{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.mtn_rep{
+    text-align: right;
+}
+
+.montant .border2{
+    width: 45vh;
+    height: 1px;
+    margin-top: 8px;
+    background-color: #999;
+}
+
+.note{
+    background-color: #fff;
+    word-break:keep-all;
+    margin-top: 20px;
+    padding: 15px 15px 10px 15px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 1px #61616144;
+}
+
+.note img{
+    width: 100px;
+    height: 100px;
+}
+

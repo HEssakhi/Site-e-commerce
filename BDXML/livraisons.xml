@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livraisons xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="livraisons.xsd">
+  
+  
+
+
+
+<livraison><idLiv>3</idLiv><idCmd>3</idCmd><dateL>25/03/2021</dateL><addresse>ddddddddddd</addresse><codepostal>70000</codepostal><ville>Fes</ville><etat>Arrivé</etat></livraison><livraison><idLiv>4</idLiv><idCmd>4</idCmd><dateL>22/03/2021</dateL><addresse>ddddddddddd</addresse><codepostal>20000</codepostal><ville>Fes</ville><etat>Arrivé</etat></livraison><livraison><idLiv>5</idLiv><idCmd>5</idCmd><dateL>26/03/2021</dateL><addresse>SS</addresse><codepostal>8000</codepostal><ville>Fes</ville><etat>Arrivé</etat></livraison><livraison><idLiv>6</idLiv><idCmd>6</idCmd><dateL>02/04/2021</dateL><addresse>ddddddddddd</addresse><codepostal>20000</codepostal><ville>Fes</ville><etat>Arrivé</etat></livraison>
+
+
+
+
+
+
+
+
+<livraison><idLiv>8</idLiv><idCmd>8</idCmd><dateL>null</dateL><addresse>SS</addresse><codepostal>12233</codepostal><ville>Fes</ville><etat>null</etat></livraison><livraison><idLiv>9</idLiv><idCmd>9</idCmd><dateL>null</dateL><addresse>hh</addresse><codepostal>70000</codepostal><ville>CasaBlanca</ville><etat>null</etat></livraison><livraison><idLiv>10</idLiv><idCmd>10</idCmd><dateL>null</dateL><addresse>re</addresse><codepostal>70000</codepostal><ville>Rabat</ville><etat>null</etat></livraison><livraison><idLiv>11</idLiv><idCmd>11</idCmd><dateL>null</dateL><addresse>Hay al massira rue al majd nr 40</addresse><codepostal>70000000</codepostal><ville>Laayoune</ville><etat>null</etat></livraison><livraison><idLiv>12</idLiv><idCmd>12</idCmd><dateL>null</dateL><addresse>hhh</addresse><codepostal>70000</codepostal><ville>Rabat</ville><etat>null</etat></livraison><livraison><idLiv>13</idLiv><idCmd>13</idCmd><dateL>null</dateL><addresse>tt</addresse><codepostal>20000</codepostal><ville>CasaBlanca</ville><etat>null</etat></livraison><livraison><idLiv>14</idLiv><idCmd>14</idCmd><dateL>null</dateL><addresse>test</addresse><codepostal>80000</codepostal><ville>Rabat</ville><etat>null</etat></livraison><livraison><idLiv>15</idLiv><idCmd>15</idCmd><dateL>null</dateL><addresse>dddddddddddddddddddd</addresse><codepostal>70000</codepostal><ville>Laayoune</ville><etat>null</etat></livraison><livraison><idLiv>16</idLiv><idCmd>16</idCmd><dateL>null</dateL><addresse>ddddddddddd</addresse><codepostal>70000</codepostal><ville>Fes</ville><etat>null</etat></livraison><livraison><idLiv>17</idLiv><idCmd>17</idCmd><dateL>null</dateL><addresse>SS</addresse><codepostal>70000</codepostal><ville>CasaBlanca</ville><etat>null</etat></livraison><livraison><idLiv>18</idLiv><idCmd>18</idCmd><dateL>null</dateL><addresse>ddddddddddd</addresse><codepostal>8000</codepostal><ville>Fes</ville><etat>null</etat></livraison></livraisons>

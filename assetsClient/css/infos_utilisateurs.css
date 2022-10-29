@@ -1,0 +1,129 @@
+
+/**************************************************************************/
+.infos{
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  width: 95%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infos img{
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.infos #infos-text, #titre{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.infos .img-body{
+  height: 600px;
+  width:600px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-image: url('img1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.infos .infos-container{
+  border: 1.2px solid rgb(173, 172, 172);
+  box-shadow: 1px 1px 1px 1px #61616144;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.infos .infos-container h3{
+  margin-left: 1.5rem;
+}
+
+.infos .infos-container #profil-titre{
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-top: -0.3rem;
+}
+
+/***************profile-img***********************/
+
+.infos .infos-container .profil-img{
+  display: grid;
+  grid-template-columns: 16rem 30rem 6.5rem;
+}
+
+.infos .infos-container .profil-img .qws{
+  text-transform: uppercase;
+  font-size: .6875rem;
+  font-weight: 500;
+  letter-spacing: .07272727em;
+  line-height: 4rem;
+  padding-left: 25px;
+  color: #5f6368;
+}
+
+.infos .infos-container .profil-img .anwser{
+  font-size: .95rem;
+  letter-spacing: .00625em;
+  line-height: 3.9rem;
+}
+
+.infos .infos-container .profil-img .photo{
+  display: table;
+  padding-right: 25px;
+}
+
+.infos .infos-container .profil-img .photo img{
+  width: 4rem;
+  height: 4rem;
+  display: table-column;
+  vertical-align: middle;
+  float: right;
+}
+
+/*******************end profile-img*********************/
+
+/**********************profile-nom,age,sexe,password**********************/
+.profil-infos{
+  display: grid;
+  grid-template-columns: 16rem 30rem 6.5rem;
+}
+
+.profil-infos div{
+  height: 4rem;
+  
+}
+/********question************************/
+.profil-infos .qws{
+  text-transform: uppercase;
+  font-size: .6875rem;
+  font-weight: 500;
+  letter-spacing: .07272727em;
+  line-height: 4rem;
+  padding-left: 25px;
+  color: #5f6368;
+}
+/**********end question****************/
+
+/***************anwser*****************/
+
+.profil-infos .answer{
+  font-size: .95rem;
+  letter-spacing: .00625em;
+  line-height: 3.9rem;
+}
+
+/************end answer*******************/
+
+
